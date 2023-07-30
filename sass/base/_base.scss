@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+body {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-weight: 100;
+  font-size: 2rem;
+  color: $primary-font-gray;
+  height: fill-available;
+  height: -webkit-fill-available;
+}

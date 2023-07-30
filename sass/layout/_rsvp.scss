@@ -1,0 +1,15 @@
+#rsvp {
+  padding: 5rem 1rem 15rem 1rem;
+  background-image: url("../img/footer.avif");
+  background-position: center 60%;
+  background-size: cover;
+}
+.rsvp__container {
+  max-width: 800px;
+  min-height: 300px;
+  margin: 0 auto;
+  border: 2px solid rgba($color: #e5dee2, $alpha: 0.5);
+  padding: 5rem 6rem 0 6rem;
+  border-radius: 6px;
+  background-color: rgba($color: white, $alpha: 0.6);
+}

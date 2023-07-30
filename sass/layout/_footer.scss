@@ -1,0 +1,18 @@
+footer {
+  height: 150px;
+  background-color: lighten($secondary-color-dark, 16%);
+  padding-top: 1rem;
+  @include for-size(phone-only) {
+    height: 140px;
+  }
+  & > p {
+    font-size: 3rem;
+    @include for-size(phone-only) {
+      font-size: 2rem;
+    }
+  }
+  & hr {
+    width: 100px;
+    margin: 1rem auto 0 auto;
+  }
+}
