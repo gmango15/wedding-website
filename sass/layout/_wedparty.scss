@@ -47,11 +47,11 @@
   margin: 0 auto;
 }
 .wedparty__body {
-  height: 540px;
+  height: 620px;
   position: relative;
   overflow: hidden;
   @include for-size(tablet-landscape-down) {
-    height: 1100px;
+    height: 1200px;
   }
 
   &--img {

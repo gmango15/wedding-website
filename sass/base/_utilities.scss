@@ -17,15 +17,6 @@
     width: 100%;
   }
 }
-.nav--hidden {
-  transform: translateY(-250px);
-  transition: transform 0.7s ease-in;
-}
-
-.cta--hidden {
-  transform: translatex(50px);
-  transition: transform 0.7s ease-in;
-}
 
 .section--animation {
   animation: section-slide 0.8s;
@@ -48,17 +39,6 @@
   transform: translatey(700px);
 }
 
-.border--right {
-  border-right: 1px solid $primary-color;
-}
 .pink--background {
   background-color: $primary-color-light;
-}
-@keyframes text--reveal {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }

@@ -65,7 +65,7 @@ const dOn = document.querySelector(".defaultOn");
 tabBtn.forEach(function (tabBt, index) {
   tabBt.addEventListener("click", () => {
     for (let i = 0; i < tabCards.length; i++) {
-      tabCards[i].style.transform = "translate(0, 1120px)";
+      tabCards[i].style.transform = "translate(0, 1210px)";
       tabBtn[i].style.color = "black";
     }
     tabCards[index].style.transform = "translate(0, 0%)";

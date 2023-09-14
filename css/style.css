@@ -35,30 +35,6 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes imageAnimation {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0; }
-  8% {
-    animation-timing-function: ease-out;
-    opacity: 1; }
-  17% {
-    opacity: 1; }
-  25% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes textRotate {
-  0% {
-    transform: rotate(180deg); }
-  33% {
-    transform: rotate(360deg); }
-  66% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(0deg); } }
-
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
@@ -67,6 +43,12 @@ body {
     transform: translateY(-10%); }
   100% {
     transform: translateY(0%);
+    opacity: 1; } }
+
+@keyframes text--reveal {
+  0% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 
 h2 {
@@ -106,14 +88,6 @@ h4 {
   .img__footer img {
     width: 100%; }
 
-.nav--hidden {
-  transform: translateY(-250px);
-  transition: transform 0.7s ease-in; }
-
-.cta--hidden {
-  transform: translatex(50px);
-  transition: transform 0.7s ease-in; }
-
 .section--animation {
   animation: section-slide 0.8s;
   animation-fill-mode: backwards; }
@@ -132,17 +106,8 @@ h4 {
 .wedparty--slide {
   transform: translatey(700px); }
 
-.border--right {
-  border-right: 1px solid #fcc2d7; }
-
 .pink--background {
   background-color: #fff0f6; }
-
-@keyframes text--reveal {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 #submit {
   background: #fff0f6;
@@ -182,7 +147,7 @@ h4 {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   background-size: cover;
-  background-position: center;
+  background-position: center 55%;
   color: transparent;
   height: 100vh;
   width: 100%;
@@ -339,7 +304,7 @@ h4 {
     animation-delay: 1s; }
     @media (max-width: 599px) {
       .title__subheading {
-        font-size: 1.5rem; } }
+        font-size: 1.4rem; } }
   .title hr {
     height: 2px;
     background-color: white; }
@@ -631,12 +596,12 @@ h4 {
   margin: 0 auto; }
 
 .wedparty__body {
-  height: 540px;
+  height: 620px;
   position: relative;
   overflow: hidden; }
   @media (max-width: 900px) {
     .wedparty__body {
-      height: 1100px; } }
+      height: 1200px; } }
   .wedparty__body--img {
     border-radius: 50%;
     margin: 1rem;
@@ -681,17 +646,23 @@ h4 {
 #rsvp {
   padding: 5rem 1rem 15rem 1rem;
   background-image: url("../img/footer.avif");
-  background-position: center 60%;
+  background-position: center 68%;
   background-size: cover; }
 
 .rsvp__container {
-  max-width: 800px;
-  min-height: 300px;
+  max-width: 1080px;
   margin: 0 auto;
   border: 2px solid rgba(229, 222, 226, 0.5);
   padding: 5rem 6rem 0 6rem;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.6); }
+
+.rsvp__flower {
+  transform: translatey(55%);
+  max-width: 50rem;
+  margin: 0 auto; }
+  .rsvp__flower img {
+    width: 90%; }
 
 .story__container {
   max-width: 1240px;
@@ -797,6 +768,43 @@ details p {
   border-bottom: 1px solid #343a40;
   margin-top: 1rem;
   padding: 1rem 0 2rem 0; }
+
+details p:nth-child(1) {
+  border: none; }
+
+.color__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin: 0 auto; }
+
+.color__container--circle {
+  border-radius: 100%; }
+
+.color__container--circle:nth-of-type(1) {
+  width: 50px;
+  height: 50px;
+  background-color: #b1d4e0; }
+
+.color__container--circle:nth-of-type(2) {
+  width: 50px;
+  height: 50px;
+  background-color: #e6bdcc; }
+
+.color__container--circle:nth-of-type(3) {
+  width: 50px;
+  height: 50px;
+  background-color: #f0c9b3; }
+
+.color__container--circle:nth-of-type(4) {
+  width: 50px;
+  height: 50px;
+  background-color: #b4aaa9; }
+
+.color__container--circle:nth-of-type(5) {
+  width: 50px;
+  height: 50px;
+  background-color: #d4d0d0; }
 
 footer {
   height: 150px;
