@@ -17,7 +17,7 @@
     flex-direction: column;
   }
   @include for-size(phone-only) {
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 5rem 0.9rem 5rem 0.9rem;
   }
   & a {
     background: $primary-color-light;
@@ -75,13 +75,11 @@
   }
   & time {
     display: inline-block;
-    // margin: 1rem;
     color: $green-color;
     text-decoration: underline;
   }
   & span {
     display: inline-block;
-    // margin: 1rem;
   }
 }
 .location {

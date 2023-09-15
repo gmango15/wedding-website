@@ -32,13 +32,8 @@ details summary > * {
 }
 details p {
   background-color: white;
-  border-bottom: 1px solid $primary-font-gray;
   margin-top: 1rem;
   padding: 1rem 0 2rem 0;
-  // text-align: center;
-}
-details p:nth-child(1) {
-  border: none;
 }
 .color__container {
   display: flex;
@@ -73,4 +68,8 @@ details p:nth-child(1) {
   width: 50px;
   height: 50px;
   background-color: #d4d0d0;
+}
+.list__container {
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
