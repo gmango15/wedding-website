@@ -159,11 +159,11 @@ h4 {
 
 .header > figure:nth-child(1) {
   transition: opacity 1s ease-in;
-  background-image: url("../img/DX9A5564-min.avif"); }
+  background-image: url("../img/union.avif"); }
 
 .header > figure:nth-child(2) {
   transition: opacity 1s ease;
-  background-image: url("../img/DX9A5300-min.avif"); }
+  background-image: url("../img/DX9A5564-min.avif"); }
 
 .header > figure:nth-child(3) {
   transition: opacity 1s ease;
@@ -175,7 +175,7 @@ h4 {
 
 .header > figure:nth-child(5) {
   transition: opacity 1s ease;
-  background-image: url("../img/DX9A5433-min.avif"); }
+  background-image: url("../img/DX9A5300-min.avif"); }
 
 .slider__button--next {
   position: absolute;
@@ -570,6 +570,9 @@ h4 {
   justify-content: center;
   padding: 2rem;
   border-bottom: 1px solid #b2bac1; }
+  @media (max-width: 599px) {
+    .wedparty__tab {
+      padding: 2rem 0; } }
   .wedparty__tab--btn {
     padding: 0 1rem;
     background-color: white;
