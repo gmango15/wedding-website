@@ -143,6 +143,40 @@ h4 {
   transform: scale(2);
   opacity: 0; }
 
+.button__default {
+  background-color: #edf0ff;
+  color: #343a40;
+  border: none;
+  padding: 1.5rem 8rem;
+  margin: 1rem auto;
+  border-radius: 5rem;
+  transition: all 0.3s ease-in;
+  position: relative;
+  text-decoration: none;
+  display: inline-block; }
+  .button__default::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in;
+    background-color: #edf0ff;
+    z-index: -1;
+    border-radius: 50px; }
+
+.button__default:hover {
+  transform: translateY(-4px);
+  cursor: pointer; }
+
+.button__default:active {
+  transform: translateY(-2px); }
+
+.button__default:hover::after {
+  transform: scale(2);
+  opacity: 0; }
+
 .header > figure {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -496,7 +530,7 @@ h4 {
   @media (max-width: 599px) {
     .schedule__body {
       padding: 5rem 0.9rem 5rem 0.9rem; } }
-  .schedule__body a {
+  .schedule__body--a {
     background: #fff0f6;
     color: #343a40;
     border: none;
@@ -508,7 +542,7 @@ h4 {
     text-decoration: none;
     display: inline-block;
     font-size: 1.8rem; }
-    .schedule__body a::after {
+    .schedule__body--a::after {
       content: " ";
       position: absolute;
       top: 0;
@@ -519,12 +553,12 @@ h4 {
       background-color: #fff0f6;
       z-index: -1;
       border-radius: 50px; }
-    .schedule__body a:hover {
+    .schedule__body--a:hover {
       transform: translateY(-4px);
       cursor: pointer; }
-    .schedule__body a:active {
+    .schedule__body--a:active {
       transform: translateY(-2px); }
-    .schedule__body a:hover::after {
+    .schedule__body--a:hover::after {
       transform: scale(2);
       opacity: 0; }
 
@@ -557,7 +591,14 @@ h4 {
   margin-bottom: 1rem; }
 
 .program__image {
-  width: 100%; }
+  width: 100%;
+  transition: all 0.3s ease-in; }
+
+.img__link:hover > img {
+  transform: scale(1.08); }
+
+.program__card {
+  overflow: hidden; }
 
 #wedparty {
   padding: 6rem 0; }
@@ -607,7 +648,7 @@ h4 {
   overflow: hidden; }
   @media (max-width: 900px) {
     .wedparty__body {
-      height: 1200px; } }
+      height: 1100px; } }
   .wedparty__body--img {
     border-radius: 50%;
     margin: 1rem;
@@ -743,11 +784,11 @@ h4 {
 
 .faq__container {
   max-width: 1240px;
-  margin: 8rem auto 4rem auto;
+  margin: 12rem auto 4rem auto;
   padding: 0 4rem 60rem 4rem; }
   @media (max-width: 599px) {
     .faq__container {
-      padding: 0 2rem 40rem 2rem; } }
+      padding: 0 2rem 10rem 2rem; } }
   .faq__container h2 {
     font-family: "Cormorant", serif;
     margin-bottom: 2rem; }
@@ -814,14 +855,18 @@ details p {
   margin-left: 20px;
   margin-bottom: 10px; }
 
+.img__container {
+  overflow: hidden; }
+  .img__container img {
+    width: 80%;
+    margin-top: 2rem; }
+
 footer {
-  height: 150px;
+  min-height: 150px;
   background-color: #e3e8ff;
   padding-top: 1rem; }
-  @media (max-width: 599px) {
-    footer {
-      height: 140px; } }
   footer > p {
+    margin-top: 2rem;
     font-size: 3rem; }
     @media (max-width: 599px) {
       footer > p {
@@ -829,3 +874,28 @@ footer {
   footer hr {
     width: 100px;
     margin: 1rem auto 0 auto; }
+
+.footer__nav {
+  margin: 5rem 0 2rem 0;
+  max-width: 1200px;
+  display: none; }
+  @media (max-width: 1200px) {
+    .footer__nav {
+      display: block; } }
+  .footer__nav li {
+    width: 100%;
+    border-top: 1px solid black;
+    list-style: none; }
+    .footer__nav li:hover {
+      background-color: #c2d1ff; }
+  .footer__nav li:last-child {
+    border-bottom: 1px solid black; }
+  .footer__nav--btn {
+    text-decoration: none;
+    color: #343a40;
+    display: inline-block;
+    padding: 1rem 0;
+    font-family: Montserat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem; }

@@ -1,10 +1,10 @@
 // FAQ
 .faq__container {
   max-width: 1240px;
-  margin: 8rem auto 4rem auto;
+  margin: 12rem auto 4rem auto;
   padding: 0 4rem 60rem 4rem;
   @include for-size(phone-only) {
-    padding: 0 2rem 40rem 2rem;
+    padding: 0 2rem 10rem 2rem;
   }
   & h2 {
     font-family: "Cormorant", serif;
@@ -72,4 +72,11 @@ details p {
 .list__container {
   margin-left: 20px;
   margin-bottom: 10px;
+}
+.img__container {
+  overflow: hidden;
+  & img {
+    width: 80%;
+    margin-top: 2rem;
+  }
 }

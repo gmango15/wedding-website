@@ -1,11 +1,9 @@
 footer {
-  height: 150px;
+  min-height: 150px;
   background-color: lighten($secondary-color-dark, 16%);
   padding-top: 1rem;
-  @include for-size(phone-only) {
-    height: 140px;
-  }
   & > p {
+    margin-top: 2rem;
     font-size: 3rem;
     @include for-size(phone-only) {
       font-size: 2rem;
@@ -14,5 +12,36 @@ footer {
   & hr {
     width: 100px;
     margin: 1rem auto 0 auto;
+  }
+}
+
+.footer__nav {
+  margin: 5rem 0 2rem 0;
+  max-width: 1200px;
+  display: none;
+  @include for-size(desktop-down) {
+    display: block;
+  }
+  & li {
+    width: 100%;
+    border-top: 1px solid black;
+    list-style: none;
+
+    &:hover {
+      background-color: darken($secondary-color, 5%);
+    }
+  }
+  & li:last-child {
+    border-bottom: 1px solid black;
+  }
+  &--btn {
+    text-decoration: none;
+    color: $primary-font-gray;
+    display: inline-block;
+    padding: 1rem 0;
+    font-family: Montserat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem;
   }
 }

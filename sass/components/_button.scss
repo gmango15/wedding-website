@@ -34,3 +34,40 @@
   transform: scale(2);
   opacity: 0;
 }
+
+.button__default {
+  background-color: lighten($secondary-color-dark, 18%);
+  color: $primary-font-gray;
+  border: none;
+  padding: 1.5rem 8rem;
+  margin: 1rem auto;
+  border-radius: 5rem;
+  transition: all 0.3s ease-in;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+
+  @include pseudo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in;
+    background-color: lighten($secondary-color-dark, 18%);
+    z-index: -1;
+    border-radius: 50px;
+  }
+}
+
+.button__default:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.button__default:active {
+  transform: translateY(-2px);
+}
+
+.button__default:hover::after {
+  transform: scale(2);
+  opacity: 0;
+}
