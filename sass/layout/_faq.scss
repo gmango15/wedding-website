@@ -13,7 +13,6 @@
 }
 details {
   text-align: left;
-  transition: all 1s;
   margin-bottom: 1rem;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -39,7 +38,6 @@ details p {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
-  margin: 0 auto;
 }
 .color__container--circle {
   border-radius: 100%;
@@ -73,10 +71,15 @@ details p {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.img__container {
-  overflow: hidden;
+.center__container {
+  text-align: center;
+  margin: 0 auto;
+  & a {
+    display: inline-block;
+  }
   & img {
     width: 80%;
     margin-top: 2rem;
+    border-radius: 10px;
   }
 }

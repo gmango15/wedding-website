@@ -16,7 +16,7 @@ footer {
 }
 
 .footer__nav {
-  margin: 5rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   max-width: 1200px;
   display: none;
   @include for-size(desktop-down) {
@@ -24,7 +24,7 @@ footer {
   }
   & li {
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid $primary-font-gray;
     list-style: none;
 
     &:hover {
@@ -32,7 +32,7 @@ footer {
     }
   }
   & li:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $primary-font-gray;
   }
   &--btn {
     text-decoration: none;
