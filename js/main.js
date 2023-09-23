@@ -74,10 +74,10 @@ sliderHeader.addEventListener("touchend", (e) => {
   let deltaY = e.changedTouches[0].clientY - initialY;
   let deltaTime = new Date() - initialTime;
 
-  if (deltaX > initialX && deltaY < 100 && deltaTime <= 300) {
+  if (deltaX > 30 && deltaY < 100 && deltaTime <= 300) {
     btnNext.click();
   }
-  if (deltaX <= initialX && deltaY < 100 && deltaTime <= 300) {
+  if (deltaX <= -30 && deltaY < 100 && deltaTime <= 300) {
     btnPrev.click();
   }
 });
