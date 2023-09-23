@@ -74,11 +74,11 @@ sliderHeader.addEventListener("touchend", (e) => {
   let deltaY = e.changedTouches[0].clientY - initialY;
   let deltaTime = new Date() - initialTime;
 
-  if (deltaX > 30 && deltaY < 100 && deltaTime <= 300) {
-    btnNext.click();
-  }
-  if (deltaX <= -30 && deltaY < 100 && deltaTime <= 300) {
+  if (deltaX > 40 && deltaY < 100 && deltaTime <= 300) {
     btnPrev.click();
+  }
+  if (deltaX <= -40 && deltaY < 100 && deltaTime <= 300) {
+    btnNext.click();
   }
 });
 // Wedding Party Tabs
