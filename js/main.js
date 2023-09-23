@@ -57,6 +57,30 @@ btnPrev.addEventListener("click", () => {
   }
 });
 
+// touch control
+
+let sliderHeader = document.querySelector(".header");
+
+let initialX, initalY, initialTime;
+
+sliderHeader.addEventListener("touchstart", (e) => {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+  initialTime = new Date();
+});
+
+sliderHeader.addEventListener("touchend", (e) => {
+  let deltaX = e.changedTouches[0].clientX - initialX;
+  let deltaY = e.changedTouches[0].clientY - initialY;
+  let deltaTime = new Date() - initialTime;
+
+  if (deltaX > initialX && deltaY < 100 && deltaTime <= 300) {
+    btnNext.click();
+  }
+  if (deltaX <= initialX && deltaY < 100 && deltaTime <= 300) {
+    btnPrev.click();
+  }
+});
 // Wedding Party Tabs
 const tabBtn = document.querySelectorAll(".wedparty__tab--btn");
 const tabCards = document.querySelectorAll(".wedparty__body--card");
