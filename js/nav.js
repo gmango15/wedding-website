@@ -10,7 +10,6 @@ window.onscroll = () => {
   } else {
     document.getElementById("navigation").style.transform = "translate(0,0)";
     document.getElementById("navigation").style.transition = "transform 0.5s";
-    document.querySelector(".nav").classList.add("pink--background");
   }
   prevScrollpos = currentScrollPos;
 };
