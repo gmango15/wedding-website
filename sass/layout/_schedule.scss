@@ -17,9 +17,9 @@
     flex-direction: column;
   }
   @include for-size(phone-only) {
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 5rem 0.9rem 5rem 0.9rem;
   }
-  & a {
+  &--a {
     background: $primary-color-light;
     color: $primary-font-gray;
     border: none;
@@ -75,13 +75,11 @@
   }
   & time {
     display: inline-block;
-    // margin: 1rem;
     color: $green-color;
     text-decoration: underline;
   }
   & span {
     display: inline-block;
-    // margin: 1rem;
   }
 }
 .location {
@@ -89,4 +87,14 @@
   justify-content: center;
   gap: 2.5rem;
   margin-bottom: 1rem;
+}
+.program__image {
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.img__link:hover > img {
+  transform: scale(1.08);
+}
+.program__card {
+  overflow: hidden;
 }

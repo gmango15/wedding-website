@@ -19,14 +19,15 @@
       font-size: 6rem;
     }
     @include for-size(phone-only) {
-      font-size: 3.4rem;
+      font-size: 3.2rem;
       padding: 2rem 0;
     }
   }
   &__subheading {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     font-family: "Cormorant", serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     padding: 1rem 1rem;
     text-transform: uppercase;
     animation: text--reveal 1.5s ease-in;
@@ -34,7 +35,7 @@
     animation-delay: 1s;
 
     @include for-size(phone-only) {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
   & hr {

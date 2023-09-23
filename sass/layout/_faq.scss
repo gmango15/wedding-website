@@ -1,10 +1,10 @@
 // FAQ
 .faq__container {
   max-width: 1240px;
-  margin: 8rem auto 4rem auto;
+  margin: 12rem auto 4rem auto;
   padding: 0 4rem 60rem 4rem;
   @include for-size(phone-only) {
-    padding: 0 2rem 40rem 2rem;
+    padding: 0 2rem 10rem 2rem;
   }
   & h2 {
     font-family: "Cormorant", serif;
@@ -13,7 +13,6 @@
 }
 details {
   text-align: left;
-  transition: all 1s;
   margin-bottom: 1rem;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -32,7 +31,55 @@ details summary > * {
 }
 details p {
   background-color: white;
-  border-bottom: 1px solid $primary-font-gray;
   margin-top: 1rem;
   padding: 1rem 0 2rem 0;
+}
+.color__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.color__container--circle {
+  border-radius: 100%;
+}
+.color__container--circle:nth-of-type(1) {
+  width: 50px;
+  height: 50px;
+  background-color: #b1d4e0;
+}
+.color__container--circle:nth-of-type(2) {
+  width: 50px;
+  height: 50px;
+  background-color: #e6bdcc;
+}
+.color__container--circle:nth-of-type(3) {
+  width: 50px;
+  height: 50px;
+  background-color: #f0c9b3;
+}
+.color__container--circle:nth-of-type(4) {
+  width: 50px;
+  height: 50px;
+  background-color: #b4aaa9;
+}
+.color__container--circle:nth-of-type(5) {
+  width: 50px;
+  height: 50px;
+  background-color: #d4d0d0;
+}
+.list__container {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.center__container {
+  text-align: center;
+  margin: 0 auto;
+  & a {
+    display: inline-block;
+  }
+  & img {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
 }

@@ -2,7 +2,7 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   background-size: cover;
-  background-position: center center;
+  background-position: center 55%;
   color: transparent;
   height: 100vh;
   width: 100%;
@@ -15,7 +15,7 @@
 
 .header > figure:nth-child(1) {
   transition: opacity 1s ease-in;
-  background-image: url("../img/DX9A5320-min.avif");
+  background-image: url("../img/union.avif");
 }
 .header > figure:nth-child(2) {
   transition: opacity 1s ease;
@@ -23,7 +23,7 @@
 }
 .header > figure:nth-child(3) {
   transition: opacity 1s ease;
-  background-image: url("../img/DX9A5300-min.avif");
+  background-image: url("../img/DX9A5320-min.avif");
 }
 .header > figure:nth-child(4) {
   transition: opacity 1s ease;
@@ -31,7 +31,7 @@
 }
 .header > figure:nth-child(5) {
   transition: opacity 1s ease;
-  background-image: url("../img/DX9A5433-min.avif");
+  background-image: url("../img/DX9A5300-min.avif");
 }
 
 .slider__button--next {
