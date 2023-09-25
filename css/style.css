@@ -214,8 +214,9 @@ h4 {
 .slider__button--next {
   position: absolute;
   content: "";
-  top: 45%;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -227,17 +228,17 @@ h4 {
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
   .slider__button--next:hover, .slider__button--next:active {
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.5); }
   @media (max-width: 599px) {
     .slider__button--next {
-      height: 35px;
-      width: 35px; } }
+      opacity: 0; } }
 
 .slider__button--prev {
   position: absolute;
   content: "";
-  top: 45%;
+  top: 50%;
   left: 15px;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -252,22 +253,24 @@ h4 {
     background-color: rgba(0, 0, 0, 0.7); }
   @media (max-width: 599px) {
     .slider__button--prev {
-      height: 35px;
-      width: 35px; } }
+      opacity: 0; } }
 
 .slider__button--container {
-  bottom: 20px;
+  top: 100px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
   display: flex;
-  gap: 0.5rem; }
+  gap: 0.7rem; }
+  @media (max-width: 599px) {
+    .slider__button--container {
+      top: 70px; } }
 
 .slider__button {
-  height: 13px;
-  width: 13px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 4000;
   border: 1px solid white;
   cursor: pointer; }
@@ -276,12 +279,6 @@ h4 {
 
 .active {
   background-color: #fff0f6; }
-
-.header:hover > .slider__button--next,
-.header:hover > .slider__button--prev {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 0.5s ease-in; }
 
 .header {
   max-width: 100%;
