@@ -7,6 +7,7 @@ window.onscroll = () => {
       "translate(0,-250px)";
     document.getElementById("navigation").style.transition =
       "transform 0.7s ease-in";
+    document.querySelector(".slider__button--container").style.opacity = "0";
   } else {
     document.getElementById("navigation").style.transform = "translate(0,0)";
     document.getElementById("navigation").style.transition = "transform 0.5s";

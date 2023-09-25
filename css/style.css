@@ -214,65 +214,46 @@ h4 {
 .slider__button--next {
   position: absolute;
   content: "";
-  bottom: 6.5px;
-  right: 40%;
+  top: 45%;
+  right: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   z-index: 2999;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
   cursor: pointer;
   font-size: 2rem;
   color: white;
-  transition: all 0.5s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  transform: translateX(15px);
-  opacity: 0; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
   .slider__button--next:hover, .slider__button--next:active {
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: translateX(0);
-    opacity: 1;
-    transition: all 0.5s ease-in; }
-  @media (max-width: 900px) {
-    .slider__button--next {
-      right: 30%; } }
+    background-color: rgba(0, 0, 0, 0.7); }
   @media (max-width: 599px) {
     .slider__button--next {
       height: 35px;
-      width: 35px;
-      right: 25%;
-      bottom: 10px; } }
+      width: 35px; } }
 
 .slider__button--prev {
   position: absolute;
   content: "";
-  bottom: 6.5px;
-  left: 40%;
+  top: 45%;
+  left: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   z-index: 2999;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   font-size: 2rem;
   color: white;
-  transition: all 0.5s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  transform: translateX(-15px);
-  opacity: 0; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
   .slider__button--prev:hover, .slider__button--prev:active {
-    background-color: rgba(0, 0, 0, 0.4); }
-  @media (max-width: 900px) {
-    .slider__button--prev {
-      left: 30%; } }
+    background-color: rgba(0, 0, 0, 0.7); }
   @media (max-width: 599px) {
     .slider__button--prev {
       height: 35px;
-      width: 35px;
-      left: 25%;
-      bottom: 10px; } }
+      width: 35px; } }
 
 .slider__button--container {
   bottom: 20px;
@@ -283,8 +264,8 @@ h4 {
   gap: 0.5rem; }
 
 .slider__button {
-  height: 12px;
-  width: 12px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 4000;
@@ -329,9 +310,8 @@ h4 {
         padding: 2rem 0; } }
   .title__subheading {
     font-size: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     font-family: "Cormorant", serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     padding: 1rem 1rem;
     text-transform: uppercase;
     animation: text--reveal 1.5s ease-in;

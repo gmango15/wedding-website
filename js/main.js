@@ -23,7 +23,7 @@ const sliderCard = document.querySelectorAll(".slider__cards");
 let currentSlide = 0;
 let defaultClick = document.querySelector(".default");
 
-sliderBtn.forEach(function (sliderBt, index) {
+sliderBtn.forEach((sliderBt, index) => {
   sliderBt.addEventListener("click", () => {
     for (let i = 0; i < sliderCard.length; i++) {
       sliderCard[i].style.opacity = "0";
@@ -81,6 +81,7 @@ sliderHeader.addEventListener("touchend", (e) => {
     btnNext.click();
   }
 });
+
 // Wedding Party Tabs
 const tabBtn = document.querySelectorAll(".wedparty__tab--btn");
 const tabCards = document.querySelectorAll(".wedparty__body--card");
