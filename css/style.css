@@ -829,7 +829,7 @@ details p {
   background-color: #d4d0d0; }
 
 .list__container {
-  margin-left: 20px;
+  margin-left: 22px;
   margin-bottom: 10px; }
 
 .center__container {
@@ -841,6 +841,9 @@ details p {
     width: 80%;
     margin-top: 2rem;
     border-radius: 10px; }
+
+.img__gallery > img {
+  margin-left: -20px; }
 
 footer {
   min-height: 150px;
