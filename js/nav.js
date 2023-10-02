@@ -2,11 +2,12 @@
 let prevScrollpos = window.scrollY;
 window.onscroll = () => {
   let currentScrollPos = window.scrollY;
-  if (prevScrollpos < currentScrollPos && prevScrollpos > 50) {
+  if (prevScrollpos < currentScrollPos && prevScrollpos > 30) {
     document.getElementById("navigation").style.transform =
       "translate(0,-250px)";
     document.getElementById("navigation").style.transition =
       "transform 0.7s ease-in";
+    document.getElementById("navigation").style.backgroundColor = "#fff0f6";
   } else {
     document.getElementById("navigation").style.transform = "translate(0,0)";
     document.getElementById("navigation").style.transition = "transform 0.5s";
