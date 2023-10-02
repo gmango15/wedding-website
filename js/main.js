@@ -57,7 +57,7 @@ btnPrev.addEventListener("click", () => {
   }
 });
 
-// touch control
+// touch control slider
 
 let sliderHeader = document.querySelector(".header");
 
@@ -69,23 +69,28 @@ sliderHeader.addEventListener("touchstart", (e) => {
   initialTime = new Date();
 });
 
-sliderHeader.addEventListener("touchend", (e) => {
-  let deltaX = e.changedTouches[0].clientX - initialX;
-  let deltaY = e.changedTouches[0].clientY - initialY;
-  let deltaTime = new Date() - initialTime;
+const touch = (targetArea, buttonForward, buttonBackward) => {
+  targetArea.addEventListener("touchend", (e) => {
+    let deltaX = e.changedTouches[0].clientX - initialX;
+    let deltaY = e.changedTouches[0].clientY - initialY;
+    let deltaTime = new Date() - initialTime;
 
-  if (deltaX > 40 && deltaY < 100 && deltaTime <= 300) {
-    btnPrev.click();
-  }
-  if (deltaX <= -40 && deltaY < 100 && deltaTime <= 300) {
-    btnNext.click();
-  }
-});
+    if (deltaX > 40 && deltaY < 100 && deltaTime <= 300) {
+      buttonBackward.click();
+    }
+    if (deltaX <= -40 && deltaY < 100 && deltaTime <= 300) {
+      buttonForward.click();
+    }
+  });
+};
+
+touch(sliderHeader, btnNext, btnPrev);
 
 // Wedding Party Tabs
 const tabBtn = document.querySelectorAll(".wedparty__tab--btn");
 const tabCards = document.querySelectorAll(".wedparty__body--card");
 const dOn = document.querySelector(".defaultOn");
+let currentTab = 0;
 
 tabBtn.forEach(function (tabBt, index) {
   tabBt.addEventListener("click", () => {
@@ -95,9 +100,42 @@ tabBtn.forEach(function (tabBt, index) {
     }
     tabCards[index].style.transform = "translate(0, 0%)";
     tabBt.style.color = "pink";
+    currentTab = index;
   });
 });
 dOn.click();
+
+// touch control wedparty
+let partyHeader = document.querySelector("#wedparty");
+
+const wedNext = document.querySelector(".wed__button--next");
+const wedPrev = document.querySelector(".wed__button--prev");
+
+wedNext.addEventListener("click", () => {
+  if (currentTab === tabCards.length - 1) {
+    currentTab = 0;
+    tabBtn[currentTab].click();
+  } else {
+    tabBtn[currentTab + 1].click();
+  }
+});
+
+wedPrev.addEventListener("click", () => {
+  if (currentTab === 0) {
+    currentTab = tabCards.length - 1;
+    tabBtn[currentTab].click();
+  } else {
+    tabBtn[currentTab - 1].click();
+  }
+});
+
+partyHeader.addEventListener("touchstart", (e) => {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+  initialTime = new Date();
+});
+
+touch(partyHeader, wedNext, wedPrev);
 
 // countdown
 const deadline = new Date("January 05 2024");

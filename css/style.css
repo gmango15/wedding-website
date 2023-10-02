@@ -671,6 +671,10 @@ h4 {
 .sponsors {
   flex: 1 1 0; }
 
+.wed__button--prev,
+.wed__button--next {
+  display: none; }
+
 #rsvp {
   padding: 5rem 1rem 15rem 1rem;
   background-image: url("../img/footer.avif");
@@ -883,3 +887,13 @@ footer {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.6rem; }
+
+.gallery__container {
+  max-width: 900px;
+  max-height: 300rem;
+  column-width: 100px;
+  column-gap: 2em;
+  margin: 0 auto; }
+  .gallery__container img {
+    max-width: 250px;
+    border-radius: 10px; }

@@ -1,0 +1,13 @@
+.gallery__container {
+  max-width: 900px;
+  max-height: 300rem;
+  column-width: 100px;
+  column-gap: 2em;
+  // border: 1px red solid;
+  margin: 0 auto;
+
+  & img {
+    max-width: 250px;
+    border-radius: 10px;
+  }
+}
